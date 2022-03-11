@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 23 13:28:58 2021
+# Process ID: 13048
+# Current directory: D:/OneDrive - UGent/FPGA/Project_2021/ConvolutionLayer/ConvolutionLayer.runs/synth_1
+# Command line: vivado.exe -log Input_Window.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Input_Window.tcl
+# Log file: D:/OneDrive - UGent/FPGA/Project_2021/ConvolutionLayer/ConvolutionLayer.runs/synth_1/Input_Window.vds
+# Journal file: D:/OneDrive - UGent/FPGA/Project_2021/ConvolutionLayer/ConvolutionLayer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Input_Window.tcl -notrace
+Command: synth_design -top Input_Window -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16276
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1247.824 ; gain = 0.000
+---------------------------------------------------------------------------------

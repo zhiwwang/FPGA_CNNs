@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"E:/GitHub/FPGA_project/VHDL_File/PackageCommon.vhd" \
+"E:/GitHub/FPGA_project/VHDL_File/ConvolutionalKernel.vhd" \
+"../../../../Test_Conven.srcs/sim_1/new/Test_Con.vhd" \
+
+# Do not sort compile order
+nosort

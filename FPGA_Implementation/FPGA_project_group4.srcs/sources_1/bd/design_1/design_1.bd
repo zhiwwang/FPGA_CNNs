@@ -1,0 +1,836 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x47A4AE86FF60F8FA",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../FPGA_project_group4.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "RAM_4M_0": "",
+      "Maxpool_connection_0": "",
+      "RAM_filter_0": "",
+      "Multiplexer_0": "",
+      "Meanpool_Connection_0": "",
+      "Conv_Connection_0": "",
+      "Control_0": ""
+    },
+    "ports": {
+      "fiter_layer_0": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "flag_end_0": {
+        "direction": "O"
+      },
+      "flag_filter_0": {
+        "direction": "O",
+        "left": "8",
+        "right": "0"
+      },
+      "flag_new_image_0": {
+        "direction": "O"
+      },
+      "result_0": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "filter_data0_0": {
+        "direction": "I",
+        "left": "143",
+        "right": "0"
+      },
+      "image_data_0": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "flag_get_new_image_0": {
+        "direction": "I"
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "RAM_4M_0": {
+        "vlnv": "xilinx.com:module_ref:RAM_4M:1.0",
+        "xci_name": "design_1_RAM_4M_0_0",
+        "xci_path": "ip\\design_1_RAM_4M_0_0\\design_1_RAM_4M_0_0.xci",
+        "inst_hier_path": "RAM_4M_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAM_4M",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clka": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rsta": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ena": {
+            "direction": "I"
+          },
+          "wea": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "addra": {
+            "direction": "I",
+            "left": "17",
+            "right": "0"
+          },
+          "dina": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "douta": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "clkb": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rstb": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "enb": {
+            "direction": "I"
+          },
+          "web": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "addrb": {
+            "direction": "I",
+            "left": "17",
+            "right": "0"
+          },
+          "dinb": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "doutb": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "rsta_busy": {
+            "direction": "O"
+          },
+          "rstb_busy": {
+            "direction": "O"
+          }
+        }
+      },
+      "Maxpool_connection_0": {
+        "vlnv": "xilinx.com:module_ref:Maxpool_connection:1.0",
+        "xci_name": "design_1_Maxpool_connection_0_0",
+        "xci_path": "ip\\design_1_Maxpool_connection_0_0\\design_1_Maxpool_connection_0_0.xci",
+        "inst_hier_path": "Maxpool_connection_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Maxpool_connection",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data_from_RAM": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "data_write_to_RAM": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "RAM_filter_0": {
+        "vlnv": "xilinx.com:module_ref:RAM_filter:1.0",
+        "xci_name": "design_1_RAM_filter_0_0",
+        "xci_path": "ip\\design_1_RAM_filter_0_0\\design_1_RAM_filter_0_0.xci",
+        "inst_hier_path": "RAM_filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAM_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data": {
+            "direction": "I",
+            "left": "143",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "we": {
+            "direction": "I"
+          },
+          "q": {
+            "direction": "O",
+            "left": "3455",
+            "right": "0"
+          }
+        }
+      },
+      "Multiplexer_0": {
+        "vlnv": "xilinx.com:module_ref:Multiplexer:1.0",
+        "xci_name": "design_1_Multiplexer_0_1",
+        "xci_path": "ip\\design_1_Multiplexer_0_1\\design_1_Multiplexer_0_1.xci",
+        "inst_hier_path": "Multiplexer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Multiplexer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "en": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "image_dinb": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "conv_douta": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "conv_dinb": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "conv_doutb": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "max_douta": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "max_dinb": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "mean_douta": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "web_control": {
+            "direction": "I"
+          },
+          "ena": {
+            "direction": "O"
+          },
+          "wea": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "dina": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "douta": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "enb": {
+            "direction": "O"
+          },
+          "web": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "dinb": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "doutb": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Meanpool_Connection_0": {
+        "vlnv": "xilinx.com:module_ref:Meanpool_Connection:1.0",
+        "xci_name": "design_1_Meanpool_Connection_0_0",
+        "xci_path": "ip\\design_1_Meanpool_Connection_0_0\\design_1_Meanpool_Connection_0_0.xci",
+        "inst_hier_path": "Meanpool_Connection_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Meanpool_Connection",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "RAM_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "Result_state": {
+            "direction": "O"
+          },
+          "Result": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Conv_Connection_0": {
+        "vlnv": "xilinx.com:module_ref:Conv_Connection:1.0",
+        "xci_name": "design_1_Conv_Connection_0_3",
+        "xci_path": "ip\\design_1_Conv_Connection_0_3\\design_1_Conv_Connection_0_3.xci",
+        "inst_hier_path": "Conv_Connection_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Conv_Connection",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "flag_filter_finished": {
+            "direction": "I"
+          },
+          "input_window_readRAM": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "output_window_readRAM": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "output_window_writeRAM": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "filter_in": {
+            "direction": "I",
+            "left": "3455",
+            "right": "0"
+          }
+        }
+      },
+      "Control_0": {
+        "vlnv": "xilinx.com:module_ref:Control:1.0",
+        "xci_name": "design_1_Control_0_0",
+        "xci_path": "ip\\design_1_Control_0_0\\design_1_Control_0_0.xci",
+        "inst_hier_path": "Control_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Control",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "rst_out": {
+            "direction": "O"
+          },
+          "flag_new_image": {
+            "direction": "O"
+          },
+          "flag_get_new_image": {
+            "direction": "I"
+          },
+          "image_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "flag_filter": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "fiter_layer": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "flag_fiter_bottom": {
+            "direction": "O"
+          },
+          "filter_data0": {
+            "direction": "I",
+            "left": "143",
+            "right": "0"
+          },
+          "flag_end": {
+            "direction": "O"
+          },
+          "flag_end_in": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "result_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "image_data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "filter_data0_out": {
+            "direction": "O",
+            "left": "143",
+            "right": "0"
+          },
+          "filterRAM_we": {
+            "direction": "O"
+          },
+          "RAM_we": {
+            "direction": "O"
+          },
+          "en_layer": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "input_addr_control": {
+            "direction": "O",
+            "left": "17",
+            "right": "0"
+          },
+          "output_addr_control": {
+            "direction": "O",
+            "left": "17",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Control_0_RAM_we": {
+        "ports": [
+          "Control_0/RAM_we",
+          "Multiplexer_0/web_control"
+        ]
+      },
+      "Control_0_en_layer": {
+        "ports": [
+          "Control_0/en_layer",
+          "Multiplexer_0/en"
+        ]
+      },
+      "Control_0_filterRAM_we": {
+        "ports": [
+          "Control_0/filterRAM_we",
+          "RAM_filter_0/we"
+        ]
+      },
+      "Control_0_filter_data0_out": {
+        "ports": [
+          "Control_0/filter_data0_out",
+          "RAM_filter_0/data"
+        ]
+      },
+      "Control_0_fiter_layer": {
+        "ports": [
+          "Control_0/fiter_layer",
+          "fiter_layer_0"
+        ]
+      },
+      "Control_0_flag_end": {
+        "ports": [
+          "Control_0/flag_end",
+          "flag_end_0"
+        ]
+      },
+      "Control_0_flag_filter": {
+        "ports": [
+          "Control_0/flag_filter",
+          "flag_filter_0"
+        ]
+      },
+      "Control_0_flag_fiter_bottom": {
+        "ports": [
+          "Control_0/flag_fiter_bottom",
+          "Conv_Connection_0/flag_filter_finished"
+        ]
+      },
+      "Control_0_flag_new_image": {
+        "ports": [
+          "Control_0/flag_new_image",
+          "flag_new_image_0"
+        ]
+      },
+      "Control_0_image_data_out": {
+        "ports": [
+          "Control_0/image_data_out",
+          "Multiplexer_0/image_dinb"
+        ]
+      },
+      "Control_0_input_addr_control": {
+        "ports": [
+          "Control_0/input_addr_control",
+          "RAM_4M_0/addra"
+        ]
+      },
+      "Control_0_output_addr_control": {
+        "ports": [
+          "Control_0/output_addr_control",
+          "RAM_4M_0/addrb"
+        ]
+      },
+      "Control_0_result": {
+        "ports": [
+          "Control_0/result",
+          "result_0"
+        ]
+      },
+      "Control_0_rst_out": {
+        "ports": [
+          "Control_0/rst_out",
+          "Maxpool_connection_0/rst",
+          "Meanpool_Connection_0/rst",
+          "Conv_Connection_0/rst"
+        ]
+      },
+      "Conv_Connection_0_output_window_writeRAM": {
+        "ports": [
+          "Conv_Connection_0/output_window_writeRAM",
+          "Multiplexer_0/conv_dinb"
+        ]
+      },
+      "Maxpool_connection_0_data_write_to_RAM": {
+        "ports": [
+          "Maxpool_connection_0/data_write_to_RAM",
+          "Multiplexer_0/max_dinb"
+        ]
+      },
+      "Meanpool_Connection_0_Result": {
+        "ports": [
+          "Meanpool_Connection_0/Result",
+          "Control_0/result_in"
+        ]
+      },
+      "Meanpool_Connection_0_Result_state": {
+        "ports": [
+          "Meanpool_Connection_0/Result_state",
+          "Control_0/flag_end_in"
+        ]
+      },
+      "Multiplexer_0_conv_douta": {
+        "ports": [
+          "Multiplexer_0/conv_douta",
+          "Conv_Connection_0/input_window_readRAM"
+        ]
+      },
+      "Multiplexer_0_conv_doutb": {
+        "ports": [
+          "Multiplexer_0/conv_doutb",
+          "Conv_Connection_0/output_window_readRAM"
+        ]
+      },
+      "Multiplexer_0_dina": {
+        "ports": [
+          "Multiplexer_0/dina",
+          "RAM_4M_0/dina"
+        ]
+      },
+      "Multiplexer_0_dinb": {
+        "ports": [
+          "Multiplexer_0/dinb",
+          "RAM_4M_0/dinb"
+        ]
+      },
+      "Multiplexer_0_ena": {
+        "ports": [
+          "Multiplexer_0/ena",
+          "RAM_4M_0/ena"
+        ]
+      },
+      "Multiplexer_0_enb": {
+        "ports": [
+          "Multiplexer_0/enb",
+          "RAM_4M_0/enb"
+        ]
+      },
+      "Multiplexer_0_max_douta": {
+        "ports": [
+          "Multiplexer_0/max_douta",
+          "Maxpool_connection_0/data_from_RAM"
+        ]
+      },
+      "Multiplexer_0_mean_douta": {
+        "ports": [
+          "Multiplexer_0/mean_douta",
+          "Meanpool_Connection_0/RAM_data"
+        ]
+      },
+      "Multiplexer_0_wea": {
+        "ports": [
+          "Multiplexer_0/wea",
+          "RAM_4M_0/wea"
+        ]
+      },
+      "Multiplexer_0_web": {
+        "ports": [
+          "Multiplexer_0/web",
+          "RAM_4M_0/web"
+        ]
+      },
+      "RAM_4M_0_douta": {
+        "ports": [
+          "RAM_4M_0/douta",
+          "Multiplexer_0/douta"
+        ]
+      },
+      "RAM_4M_0_doutb": {
+        "ports": [
+          "RAM_4M_0/doutb",
+          "Multiplexer_0/doutb"
+        ]
+      },
+      "RAM_filter_0_q": {
+        "ports": [
+          "RAM_filter_0/q",
+          "Conv_Connection_0/filter_in"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "RAM_4M_0/clka",
+          "RAM_4M_0/clkb",
+          "Maxpool_connection_0/clk",
+          "RAM_filter_0/clock",
+          "Meanpool_Connection_0/clk",
+          "Conv_Connection_0/clk",
+          "Control_0/clk"
+        ]
+      },
+      "filter_data0_0_1": {
+        "ports": [
+          "filter_data0_0",
+          "Control_0/filter_data0"
+        ]
+      },
+      "flag_get_new_image_0_1": {
+        "ports": [
+          "flag_get_new_image_0",
+          "Control_0/flag_get_new_image"
+        ]
+      },
+      "image_data_0_1": {
+        "ports": [
+          "image_data_0",
+          "Control_0/image_data"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "RAM_4M_0/rsta",
+          "RAM_4M_0/rstb",
+          "RAM_filter_0/rst",
+          "Control_0/rst"
+        ]
+      }
+    }
+  }
+}

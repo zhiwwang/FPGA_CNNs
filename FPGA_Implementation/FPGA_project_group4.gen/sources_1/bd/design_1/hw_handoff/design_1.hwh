@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 30 03:38:40 2021" VIVADOVERSION="2021.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="5" NAME="fiter_layer_0" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_fiter_layer">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="fiter_layer"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="flag_end_0" SIGIS="undef" SIGNAME="Control_0_flag_end">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="flag_end"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="8" NAME="flag_filter_0" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_flag_filter">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="flag_filter"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="flag_new_image_0" SIGIS="undef" SIGNAME="Control_0_flag_new_image">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="flag_new_image"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="result_0" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_result">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="result"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="143" NAME="filter_data0_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_filter_data0_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="filter_data0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="image_data_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_image_data_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="image_data"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="flag_get_new_image_0" SIGIS="undef" SIGNAME="External_Ports_flag_get_new_image_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_0" PORT="flag_get_new_image"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAM_4M_0" PORT="clka"/>
+        <CONNECTION INSTANCE="RAM_4M_0" PORT="clkb"/>
+        <CONNECTION INSTANCE="Maxpool_connection_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RAM_filter_0" PORT="clock"/>
+        <CONNECTION INSTANCE="Meanpool_Connection_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Conv_Connection_0" PORT="clk"/>
+        <CONNECTION INSTANCE="Control_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RAM_4M_0" PORT="rsta"/>
+        <CONNECTION INSTANCE="RAM_4M_0" PORT="rstb"/>
+        <CONNECTION INSTANCE="RAM_filter_0" PORT="rst"/>
+        <CONNECTION INSTANCE="Control_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Control_0" HWVERSION="1.0" INSTANCE="Control_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Control" VLNV="xilinx.com:module_ref:Control:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Control_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rst_out" SIGIS="undef" SIGNAME="Control_0_rst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_connection_0" PORT="rst"/>
+            <CONNECTION INSTANCE="Meanpool_Connection_0" PORT="rst"/>
+            <CONNECTION INSTANCE="Conv_Connection_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="flag_new_image" SIGIS="undef" SIGNAME="Control_0_flag_new_image">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="flag_new_image_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="flag_get_new_image" SIGIS="undef" SIGNAME="External_Ports_flag_get_new_image_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="flag_get_new_image_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="image_data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_image_data_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="image_data_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="flag_filter" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_flag_filter">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="flag_filter_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="fiter_layer" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_fiter_layer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="fiter_layer_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="flag_fiter_bottom" SIGIS="undef" SIGNAME="Control_0_flag_fiter_bottom">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Conv_Connection_0" PORT="flag_filter_finished"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="filter_data0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_filter_data0_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="filter_data0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="flag_end" SIGIS="undef" SIGNAME="Control_0_flag_end">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="flag_end_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="flag_end_in" SIGIS="undef" SIGNAME="Meanpool_Connection_0_Result_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Meanpool_Connection_0" PORT="Result_state"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="result" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="result_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="result_in" RIGHT="0" SIGIS="undef" SIGNAME="Meanpool_Connection_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Meanpool_Connection_0" PORT="Result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="image_data_out" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_image_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="image_dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="143" NAME="filter_data0_out" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_filter_data0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_filter_0" PORT="data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="filterRAM_we" SIGIS="undef" SIGNAME="Control_0_filterRAM_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_filter_0" PORT="we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RAM_we" SIGIS="undef" SIGNAME="Control_0_RAM_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="web_control"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="en_layer" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_en_layer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="input_addr_control" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_input_addr_control">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="output_addr_control" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_output_addr_control">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Conv_Connection_0" HWVERSION="1.0" INSTANCE="Conv_Connection_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Conv_Connection" VLNV="xilinx.com:module_ref:Conv_Connection:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="filter_channels" VALUE="24"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Conv_Connection_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="Control_0_rst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="rst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="flag_filter_finished" SIGIS="undef" SIGNAME="Control_0_flag_fiter_bottom">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="flag_fiter_bottom"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="input_window_readRAM" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_conv_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="conv_douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="output_window_readRAM" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_conv_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="conv_doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="output_window_writeRAM" RIGHT="0" SIGIS="undef" SIGNAME="Conv_Connection_0_output_window_writeRAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="conv_dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3455" NAME="filter_in" RIGHT="0" SIGIS="undef" SIGNAME="RAM_filter_0_q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_filter_0" PORT="q"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Maxpool_connection_0" HWVERSION="1.0" INSTANCE="Maxpool_connection_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Maxpool_connection" VLNV="xilinx.com:module_ref:Maxpool_connection:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Maxpool_connection_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="Control_0_rst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="rst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="data_from_RAM" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_max_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="max_douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data_write_to_RAM" RIGHT="0" SIGIS="undef" SIGNAME="Maxpool_connection_0_data_write_to_RAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="max_dinb"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Meanpool_Connection_0" HWVERSION="1.0" INSTANCE="Meanpool_Connection_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Meanpool_Connection" VLNV="xilinx.com:module_ref:Meanpool_Connection:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Meanpool_Connection_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="Control_0_rst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="rst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="RAM_data" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_mean_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="mean_douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Result_state" SIGIS="undef" SIGNAME="Meanpool_Connection_0_Result_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="flag_end_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Result" RIGHT="0" SIGIS="undef" SIGNAME="Meanpool_Connection_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="result_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Multiplexer_0" HWVERSION="1.0" INSTANCE="Multiplexer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Multiplexer" VLNV="xilinx.com:module_ref:Multiplexer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Multiplexer_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="en" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_en_layer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="en_layer"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="image_dinb" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_image_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="image_data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="conv_douta" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_conv_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Conv_Connection_0" PORT="input_window_readRAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="conv_dinb" RIGHT="0" SIGIS="undef" SIGNAME="Conv_Connection_0_output_window_writeRAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Conv_Connection_0" PORT="output_window_writeRAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="conv_doutb" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_conv_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Conv_Connection_0" PORT="output_window_readRAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="max_douta" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_max_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_connection_0" PORT="data_from_RAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="max_dinb" RIGHT="0" SIGIS="undef" SIGNAME="Maxpool_connection_0_data_write_to_RAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Maxpool_connection_0" PORT="data_write_to_RAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="mean_douta" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_mean_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Meanpool_Connection_0" PORT="RAM_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="web_control" SIGIS="undef" SIGNAME="Control_0_RAM_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="RAM_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ena" SIGIS="undef" SIGNAME="Multiplexer_0_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="RAM_4M_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="enb" SIGIS="undef" SIGNAME="Multiplexer_0_enb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="enb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_web">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="web"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_dinb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="RAM_4M_0_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_4M_0" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RAM_4M_0" HWVERSION="1.0" INSTANCE="RAM_4M_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RAM_4M" VLNV="xilinx.com:module_ref:RAM_4M:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RAM_4M_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rsta" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="Multiplexer_0_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_input_addr_control">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="input_addr_control"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="RAM_4M_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clkb" SIGIS="undef" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rstb" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="Multiplexer_0_enb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="enb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_web">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="web"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_output_addr_control">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="output_addr_control"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="Multiplexer_0_dinb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="RAM_4M_0_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplexer_0" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rsta_busy" SIGIS="undef"/>
+        <PORT DIR="O" NAME="rstb_busy" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RAM_filter_0" HWVERSION="1.0" INSTANCE="RAM_filter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RAM_filter" VLNV="xilinx.com:module_ref:RAM_filter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RAM_filter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="143" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="Control_0_filter_data0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="filter_data0_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we" SIGIS="undef" SIGNAME="Control_0_filterRAM_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_0" PORT="filterRAM_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3455" NAME="q" RIGHT="0" SIGIS="undef" SIGNAME="RAM_filter_0_q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Conv_Connection_0" PORT="filter_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

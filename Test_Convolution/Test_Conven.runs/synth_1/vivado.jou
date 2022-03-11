@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov  4 11:45:45 2021
+# Process ID: 12120
+# Current directory: C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/synth_1
+# Command line: vivado.exe -log ConvolutionalKernel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ConvolutionalKernel.tcl
+# Log file: C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/synth_1/ConvolutionalKernel.vds
+# Journal file: C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ConvolutionalKernel.tcl -notrace

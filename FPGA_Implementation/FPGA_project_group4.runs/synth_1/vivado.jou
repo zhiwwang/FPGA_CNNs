@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 30 03:31:12 2021
+# Process ID: 344
+# Current directory: C:/Users/Yarne/FPGA_PROJECT/FPGA_project_final_solution/FPGA_project_group4/FPGA_project_group4.runs/synth_1
+# Command line: vivado.exe -log Conv_Connection.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Conv_Connection.tcl
+# Log file: C:/Users/Yarne/FPGA_PROJECT/FPGA_project_final_solution/FPGA_project_group4/FPGA_project_group4.runs/synth_1/Conv_Connection.vds
+# Journal file: C:/Users/Yarne/FPGA_PROJECT/FPGA_project_final_solution/FPGA_project_group4/FPGA_project_group4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Conv_Connection.tcl -notrace

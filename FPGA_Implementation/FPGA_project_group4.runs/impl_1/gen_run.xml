@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1638239589">
+  <File Type="ROUTE-PWR" Name="Conv_Connection_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Conv_Connection.tcl"/>
+  <File Type="BITSTR-MMI" Name="Conv_Connection.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Conv_Connection_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Conv_Connection_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Conv_Connection_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Conv_Connection_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="Conv_Connection_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Conv_Connection_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Conv_Connection_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Conv_Connection.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Conv_Connection_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Conv_Connection_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Conv_Connection_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Conv_Connection_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Conv_Connection_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Conv_Connection_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Conv_Connection_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Conv_Connection_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Conv_Connection_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Conv_Connection_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Conv_Connection_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Conv_Connection.bin"/>
+  <File Type="PLACE-TIMING" Name="Conv_Connection_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Conv_Connection_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Conv_Connection.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Conv_Connection_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Conv_Connection_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Conv_Connection_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Conv_Connection.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Conv_Connection_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Conv_Connection_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Conv_Connection_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Conv_Connection_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Conv_Connection_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Conv_Connection_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Conv_Connection_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Conv_Connection_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Conv_Connection_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Conv_Connection_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Conv_Connection_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Conv_Connection_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Conv_Connection_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Conv_Connection_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Conv_Connection_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Conv_Connection_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Conv_Connection_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Conv_Connection_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Conv_Connection_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Conv_Connection_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Conv_Connection_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Conv_Connection_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Conv_Connection_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Conv_Connection_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Conv_Connection_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Conv_Connection_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Conv_Connection_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Conv_Connection.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Conv_Connection_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Conv_Connection_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Conv_Connection.nky"/>
+  <File Type="BITSTR-BMM" Name="Conv_Connection_bd.bmm"/>
+  <File Type="PDI-FILE" Name="Conv_Connection.pdi"/>
+  <File Type="RCFI_FILE" Name="Conv_Connection.rcfi"/>
+  <File Type="CFI_FILE" Name="Conv_Connection.cfi"/>
+  <File Type="RNPI_FILE" Name="Conv_Connection.rnpi"/>
+  <File Type="NPI_FILE" Name="Conv_Connection.npi"/>
+  <File Type="RBD_FILE" Name="Conv_Connection.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Conv_Connection.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Conv_Connection.sysdef"/>
+  <File Type="BG-BGN" Name="Conv_Connection.bgn"/>
+  <File Type="BG-DRC" Name="Conv_Connection.drc"/>
+  <File Type="RDI-RDI" Name="Conv_Connection.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/kernel/PackageCommon.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Conv_inputwindow_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/kernel/ConvolutionalKernel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Conv_outputwindow_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Conv_Connection.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Control.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1637882529"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM_4M.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/kernel/MaxPoolingKernel.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Max_input_window.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Max_output_window.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Maxpool_connection.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM_filter.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Multiplexer.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/kernel/MeanPoolingKernel.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mean_Input_Window.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Meanpool_Connection.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="E:/GitHub/FPGA_project_final_solution/VHDL_files/PackageCommon.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Conv_Connection"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/Conv_Connection.vhd"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Multiplexer_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Conv_Connection_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Meanpool_Connection_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_RAM_4M_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Maxpool_connection_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_RAM_filter_0_0"/>
+</GenRun>

@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+Error: File filter.txt is already at the end of file, nothing to read
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Error: TEXTIO function READ: read a non-integer, a integer is expected
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Warning: TEXTIO function READ: line is empty
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Warning: TEXTIO function READ: line is empty
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Error: File filter.txt is already at the end of file, nothing to read
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Warning: TEXTIO function READ: line is empty
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Warning: TEXTIO function READ: line is empty
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+Warning: TEXTIO function READ: line is empty
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+ERROR: File filter.txt could not be opened.
+Time: 20 ns  Iteration: 0  Process: /Test_Con/p_filter
+  File: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd
+
+HDL Line: C:/Users/Xuanbo/Test_Conven/Test_Conven.srcs/sim_1/new/Test_Con.vhd:78

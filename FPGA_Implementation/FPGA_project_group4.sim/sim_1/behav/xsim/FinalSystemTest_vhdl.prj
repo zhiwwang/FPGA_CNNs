@@ -1,0 +1,32 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FPGA_project_group4.srcs/sources_1/new/RAM_4M.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/kernel/PackageCommon.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/kernel/MaxPoolingKernel.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Max_input_window.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Max_output_window.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Maxpool_connection.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/RAM_filter.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Multiplexer.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/kernel/MeanPoolingKernel.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Mean_Input_Window.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Meanpool_Connection.vhd" \
+"../../../../FPGA_project_group4.gen/sources_1/ip/xbip_multadd_0/sim/xbip_multadd_0.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Conv_inputwindow_1.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/kernel/ConvolutionalKernel.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Conv_outputwindow_1.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Conv_Connection.vhd" \
+"../../../../FPGA_project_group4.srcs/sources_1/new/Control.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_RAM_4M_0_0/sim/design_1_RAM_4M_0_0.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_Maxpool_connection_0_0/sim/design_1_Maxpool_connection_0_0.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_RAM_filter_0_0/sim/design_1_RAM_filter_0_0.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_Multiplexer_0_1/sim/design_1_Multiplexer_0_1.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_Meanpool_Connection_0_0/sim/design_1_Meanpool_Connection_0_0.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_Conv_Connection_0_3/sim/design_1_Conv_Connection_0_3.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/ip/design_1_Control_0_0/sim/design_1_Control_0_0.vhd" \
+"../../../../FPGA_project_group4.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../FPGA_project_group4.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../FPGA_project_group4.srcs/sim_1/new/FinalSystemTest.vhd" \
+
+# Do not sort compile order
+nosort

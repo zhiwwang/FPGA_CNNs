@@ -1,0 +1,289 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov  4 11:46:36 2021
+# Process ID: 18500
+# Current directory: C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/impl_1
+# Command line: vivado.exe -log ConvolutionalKernel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ConvolutionalKernel.tcl -notrace
+# Log file: C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/impl_1/ConvolutionalKernel.vdi
+# Journal file: C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ConvolutionalKernel.tcl -notrace
+Command: link_design -top ConvolutionalKernel -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1249.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 403 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ConvolutionalKernel' is not ideal for floorplanning, since the cellview 'ConvolutionalKernel' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1249.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.793 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.838 . Memory (MB): peak = 1249.793 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: ff08713b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1525.012 ; gain = 275.219
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 100de8c1a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 4 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: cd426603
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1995c375
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1995c375
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1995c375
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1995c375
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               4  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1742.414 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 128523ab2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1742.414 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 128523ab2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1742.414 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 128523ab2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1742.414 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1742.414 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 128523ab2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1742.414 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1742.414 ; gain = 492.621
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/impl_1/ConvolutionalKernel_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ConvolutionalKernel_drc_opted.rpt -pb ConvolutionalKernel_drc_opted.pb -rpx ConvolutionalKernel_drc_opted.rpx
+Command: report_drc -file ConvolutionalKernel_drc_opted.rpt -pb ConvolutionalKernel_drc_opted.pb -rpx ConvolutionalKernel_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/Xuanbo/Test_Conven/Test_Conven.runs/impl_1/ConvolutionalKernel_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1777.707 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 60298881
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1777.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1777.707 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 1762 I/O ports
+ while the target  device: 7z020 package: clg484, contains only 330 available user I/O. The target device has 330 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+ERROR: [Place 30-68] Instance clk_IBUF_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_1 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_10 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_11 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_12 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_13 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_14 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_15 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_16 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_17 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_2 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_3 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_4 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_5 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_6 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_7 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_8 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__0_i_9 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_1 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_10 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_11 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_12 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_13 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_14 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_15 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_2 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_3 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_4 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_5 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_6 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_7 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_8 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10__1_i_9 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_1 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_10 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_11 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_12 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_13 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_14 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_15 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_16 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_17 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_18 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_19 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_2 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_20 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_21 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_22 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_23 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_24 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_25 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_26 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_27 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_28 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_29 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_3 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_30 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_31 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_32 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_4 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_5 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_6 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_7 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_8 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution10_i_9 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_1 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_10 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_11 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_12 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_13 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_14 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_15 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_16 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_17 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_2 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_3 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_4 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_5 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_6 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_7 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_8 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__0_i_9 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_1 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_10 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_11 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_12 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_13 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_14 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_15 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_2 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_3 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_4 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_5 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_6 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_7 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_8 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11__1_i_9 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11_i_1 (IBUF) is not placed
+ERROR: [Place 30-68] Instance convolution11_i_10 (IBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5643a10a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.994 . Memory (MB): peak = 1777.707 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 5643a10a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.996 . Memory (MB): peak = 1777.707 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 5643a10a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.998 . Memory (MB): peak = 1777.707 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 1 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  4 11:47:02 2021...

@@ -1,0 +1,1 @@
+-wto "44d8f9a464fa471aaabbbb18b72a63be" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "MeanPoolingKernelTest_behav" "xil_defaultlib.MeanPoolingKernelTest" -log "elaborate.log" 
